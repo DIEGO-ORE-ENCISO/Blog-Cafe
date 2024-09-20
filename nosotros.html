@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BlogDeCafé</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<!--LINKS LETRA Y NORMALIZE Y CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">  
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilo.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/normalize.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/nosotros.css'>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contactos</a>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de café con conejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+    </header>
+
+
+        <main class="contenedor">
+           <h3 class="centrar-texto nh1">Sobre Nosotros</h3>
+
+           <div class="sobre-nosostros">
+                <div class="sobre-nosotros__imagen ni1">
+                    <img src="img/nosotros.jpg" alt="sobre nosotros">
+                </div>
+
+                <div class="sobre-nosostros__texto np1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper est elementum nisl ullamcorper, nec vestibulum nulla tempor. Cras blandit dapibus nibh, vitae molestie velit pretium mollis. Suspendisse a velit orci. Mauris eget dui nunc. Integer varius aliquam ullamcorper. Ut et tempus leo. Aliquam erat volutpat. 
+                        Curabitur velit libero, aliquam vel nibh quis, porttitor dictum diam.
+                    </p>
+                       <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                        Morbi gravida metus et imperdiet dignissim. Vivamus vulputate justo sed bibendum tristique. Aliquam odio odio, 
+                        aliquet quis semper sed, tincidunt ac metus. Cras lectus sem, mollis sed nisi vel, egestas bibendum nisl. Phasellus id consectetur orci. Suspendisse sit amet malesuada nisi, at eleifend velit. Quisque ullamcorper 
+                          elit felis pellentesque massa, a suscipit lorem ligula non tellus.
+
+                    </p>
+                </div>
+           </div>
+        </main>
+      
+
+
+
+
+
+
+
+
+    <footer class="footer">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+            </div>
+        <div class="menu-footer cd1">
+            <nav class="navegacion">
+                <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                <a href="contacto.html" class="navegacion__enlace">Contactos</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!--ANIMACIONES DE SCROLL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <script>
+        ScrollReveal({ 
+           // reset: true,
+            distance: '30px',
+            duration: 2500,
+            delay:400
+        });
+        ScrollReveal().reveal('.header', { delay: 100 , origin: "left", interval:100});
+        ScrollReveal().reveal('.barra', { delay: 300 , origin: "right", interval:100});
+        ScrollReveal().reveal('.header__texto', { delay: 300 , origin: "bottom", interval:100});
+        ScrollReveal().reveal('.blogtext', { delay: 300 , origin: "left", interval:100});
+        //contenido
+        ScrollReveal().reveal('.nh1', { delay: 400 , origin: "left", interval:100});
+        ScrollReveal().reveal('.np1', { delay: 400 , origin: "top", interval:100});
+        ScrollReveal().reveal('.ni1', { delay: 400 , origin: "right", interval:100});
+        //Footer
+        ScrollReveal().reveal('.cd1', { delay: 300 , origin: "bottom", interval:100});
+        </script>
+</body>
+</html>
+<script src='main.js'></script>

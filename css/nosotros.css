@@ -1,0 +1,10 @@
+/**NOSOTROS**/
+
+@media (min-width: 1024px) {
+    .sobre-nosostros{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 3rem;
+        align-items: center;
+       }
+}

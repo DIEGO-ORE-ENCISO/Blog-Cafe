@@ -1,0 +1,26 @@
+:root{
+    --FuentePrincipal : 'Kanit', sans-serif;
+
+    --gris: #e1e1e1; 
+    --primario: #784D3C;
+    --blanco: #FFFFFFFF;
+    --negro: #000000;
+}
+
+/**CURSOS**/
+
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+@media (min-width: 768px) {
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3rem;
+    }
+}
+.curso:last-of-type{
+    border: none;
+}
